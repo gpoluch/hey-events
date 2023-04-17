@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Attendee_should_be_over_eighteen</fullName>
+    <active>true</active>
+    <description>Evaluates to true when Attendee is under eighteen years old</description>
+    <errorConditionFormula>AND(
+  NOT(ISBLANK(DateOfBirth__c)),
+  DATE(YEAR(TODAY())-18, MONTH(TODAY()), DAY(TODAY())) &lt; DateOfBirth__c
+)</errorConditionFormula>
+    <errorDisplayField>DateOfBirth__c</errorDisplayField>
+    <errorMessage>Attendee cannot be under 18 years old</errorMessage>
+</ValidationRule>
