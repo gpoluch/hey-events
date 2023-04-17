@@ -52,8 +52,10 @@
         <name>CustomObject</name>
     </types>
     <types>
-        <members>*</members>
-        <name>AuraDefinitionBundle</name>
+        <members>Attendee__c-Attendee Layout</members>
+        <members>EventAttendance__c-Event Attendance Layout</members>
+        <members>Event__c-Online Event Layout</members>
+        <name>Layout</name>
     </types>
     <types>
         <members>*</members>
