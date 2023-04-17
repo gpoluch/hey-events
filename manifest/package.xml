@@ -66,6 +66,10 @@
         <name>ListView</name>
     </types>
     <types>
+        <members>Skip_Verification</members>
+        <name>PermissionSet</name>
+    </types>
+    <types>
         <members>Attendee__c.Attendee_should_be_over_eighteen</members>
         <name>ValidationRule</name>
     </types>
