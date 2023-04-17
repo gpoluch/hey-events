@@ -20,12 +20,30 @@
         <name>CustomField</name>
     </types>
     <types>
-        <members>*</members>
-        <name>ApexPage</name>
+        <members>Add</members>
+        <members>AttendeeCannotBeUnder18YearsOld</members>
+        <members>AttendeeWithEmailAlreadyExists</members>
+        <members>AttendeesInformation</members>
+        <members>Back</members>
+        <members>CheckCreatedEvent</members>
+        <members>ErrorUponEventAttendanceCreation</members>
+        <members>ErrorWhileAddingEventAttendee</members>
+        <members>EventAttendanceSummary</members>
+        <members>EventAttendanceWizard</members>
+        <members>EventCreatedSuccessfully</members>
+        <members>EventDateAndTime</members>
+        <members>EventInformation</members>
+        <members>FinalStep</members>
+        <members>Finish</members>
+        <members>FirstStep</members>
+        <members>Next</members>
+        <members>SecondStep</members>
+        <members>ViewEvent</members>
+        <name>CustomLabel</name>
     </types>
     <types>
-        <members>*</members>
-        <name>ApexTestSuite</name>
+        <members>CustomLabels</members>
+        <name>CustomLabels</name>
     </types>
     <types>
         <members>Attendee__c</members>
