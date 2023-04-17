@@ -8,6 +8,7 @@ import AttendeeCannotBeUnder18YearsOld from '@salesforce/label/c.AttendeeCannotB
 import AttendeeWithEmailAlreadyExists from '@salesforce/label/c.AttendeeWithEmailAlreadyExists';
 import EventCreatedSuccessfully from '@salesforce/label/c.EventCreatedSuccessfully';
 import EventAttendanceWizard from '@salesforce/label/c.EventAttendanceWizard';
+import EventAttendanceSummary from '@salesforce/label/c.EventAttendanceSummary';
 import CheckCreatedEvent from '@salesforce/label/c.CheckCreatedEvent';
 import EventInformation from '@salesforce/label/c.EventInformation';
 import EventDateAndTime from '@salesforce/label/c.EventDateAndTime';
@@ -30,6 +31,7 @@ export default class EventAttendanceForm extends NavigationMixin(LightningElemen
         errorWhileAddingEventAttendee: ErrorWhileAddingEventAttendee,
         eventCreatedSuccessfully: EventCreatedSuccessfully,
         eventAttendanceWizard: EventAttendanceWizard,
+        eventAttendanceSummary: EventAttendanceSummary,
         checkCreatedEvent: CheckCreatedEvent,
         eventInformation: EventInformation,
         eventDateAndTime: EventDateAndTime,
