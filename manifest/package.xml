@@ -52,6 +52,12 @@
         <name>CustomObject</name>
     </types>
     <types>
+        <members>Attendee__c-pl</members>
+        <members>EventAttendance__c-pl</members>
+        <members>Event__c-pl</members>
+        <name>CustomObjectTranslation</name>
+    </types>
+    <types>
         <members>Attendee__c-Attendee Layout</members>
         <members>EventAttendance__c-Event Attendance Layout</members>
         <members>Event__c-Online Event Layout</members>
@@ -70,6 +76,10 @@
     <types>
         <members>Skip_Verification</members>
         <name>PermissionSet</name>
+    </types>
+    <types>
+        <members>pl</members>
+        <name>Translations</name>
     </types>
     <types>
         <members>Attendee__c.Attendee_should_be_over_eighteen</members>
