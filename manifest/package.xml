@@ -58,6 +58,13 @@
         <name>CustomObjectTranslation</name>
     </types>
     <types>
+        <members>Attendee__c</members>
+        <members>EventAttendanceWizard</members>
+        <members>EventAttendance__c</members>
+        <members>Event__c</members>
+        <name>CustomTab</name>
+    </types>
+    <types>
         <members>Attendee__c-Attendee Layout</members>
         <members>EventAttendance__c-Event Attendance Layout</members>
         <members>Event__c-Online Event Layout</members>
