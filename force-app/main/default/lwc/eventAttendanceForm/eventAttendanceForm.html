@@ -1,0 +1,186 @@
+<template>
+    <div class="slds-grid slds-gutters slds-align_absolute-center">
+        <div class="slds-col slds-medium-size_8-of-12 slds-large-size_6-of-12">
+            <article class="slds-card">
+                <div class="slds-card__header slds-grid">
+                    <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                        <div class="slds-media__figure">
+                            <span class="slds-icon_container slds-icon-standard-event" title="Event">
+                                <lightning-icon icon-name="standard:event"></lightning-icon>
+                            </span>
+                        </div>
+                        <div class="slds-media__body">
+                            <h2 class="slds-card__header-title">
+                                <span>{labels.eventAttendanceWizard}</span>
+                            </h2>
+                        </div>
+                    </header>
+                </div>
+                <template if:true={isStepOne}>
+                    <lightning-record-edit-form object-api-name="Event__c" onsubmit={handleOnSubmitEvent}>
+                        <div class="slds-card__body slds-card__body_inner">
+                            <c-form-progress current-step={currentStep}></c-form-progress>
+                            <div class="slds-var-m-around_large">
+                                <c-form-section title={labels.eventInformation}></c-form-section>
+                                <div class="slds-var-m-around_medium">
+                                    <div class="slds-grid slds-gutters slds-grid_align-spread slds-wrap">
+                                        <div class="slds-col slds-size_1-of-1">
+                                            <lightning-input-field
+                                                field-name="EventName__c"
+                                                value={event.EventName__c}
+                                            ></lightning-input-field>
+                                        </div>
+
+                                        <div class="slds-col slds-medium-size_1-of-1 slds-large-size_1-of-2">
+                                            <div class="slds-form-element_stacked">
+                                                <label class="slds-form-element__label" for="date">
+                                                    {labels.eventDateAndTime}
+                                                </label>
+                                                <lightning-input-field
+                                                    id="date"
+                                                    field-name="StartDate__c"
+                                                    value={event.StartDate__c}
+                                                    variant="label-hidden"
+                                                ></lightning-input-field>
+                                            </div>
+                                        </div>
+
+                                        <div
+                                            class="slds-col slds-size_1-of-1 slds-medium-size_1-of-1 slds-large-size_1-of-2"
+                                        >
+                                            <lightning-input-field field-name="Place__c" value={event.Place__c}>
+                                            </lightning-input-field>
+                                        </div>
+
+                                        <div class="slds-col slds-size_1-of-1">
+                                            <lightning-input-field
+                                                field-name="Description__c"
+                                                value={event.Description__c}
+                                            ></lightning-input-field>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <footer class="slds-card__footer">
+                            <lightning-button
+                                label={labels.next}
+                                variant="brand"
+                                type="submit"
+                                onclick={handleNext}
+                            ></lightning-button>
+                        </footer>
+                    </lightning-record-edit-form>
+                </template>
+                <template if:true={isStepTwo}>
+                    <lightning-record-edit-form
+                        object-api-name="Attendee__c"
+                        onsubmit={handleOnSubmitAttendee}
+                        onsuccess={handleOnSuccessAttendee}
+                    >
+                        <div class="slds-card__body slds-card__body_inner">
+                            <c-form-progress current-step={currentStep}></c-form-progress>
+                            <div class="slds-var-m-around_large">
+                                <c-form-section title={labels.attendeesInformation}></c-form-section>
+                                <div class="slds-var-m-around_medium">
+                                    <div class="slds-grid slds-gutters slds-wrap slds-grid_vertical-align-end">
+                                        <div class="slds-col slds-medium-size_1-of-1 slds-large-size_1-of-5">
+                                            <lightning-input-field
+                                                field-name="FirstName__c"
+                                                value={attendee.FirstName__c}
+                                            ></lightning-input-field>
+                                        </div>
+                                        <div class="slds-col slds-medium-size_1-of-1 slds-large-size_1-of-5">
+                                            <lightning-input-field
+                                                field-name="LastName__c"
+                                                value={attendee.LastName__c}
+                                            ></lightning-input-field>
+                                        </div>
+
+                                        <div class="slds-col slds-medium-size_1-of-1 slds-large-size_1-of-5">
+                                            <lightning-input-field
+                                                field-name="DateOfBirth__c"
+                                                value={attendee.DateOfBirth__c}
+                                            ></lightning-input-field>
+                                        </div>
+
+                                        <div class="slds-col slds-medium-size_1-of-1 slds-large-size_1-of-5">
+                                            <lightning-input-field
+                                                field-name="Email__c"
+                                                value={attendee.Email__c}
+                                            ></lightning-input-field>
+                                        </div>
+
+                                        <div class="slds-col slds-medium-size_1-of-1 slds-large-size_1-of-5">
+                                            <lightning-button-icon
+                                                class="slds-form-element slds-form-element_stacked"
+                                                icon-name="utility:add"
+                                                type="submit"
+                                            >
+                                                <label>{labels.Add}</label>
+                                            </lightning-button-icon>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slds-scrollable_y" style="height: 20rem">
+                                    <c-attendee-summary attendees={attendees}></c-attendee-summary>
+                                </div>
+                            </div>
+                        </div>
+                        <footer class="slds-card__footer slds-grid slds-gutters slds-grid_align-center">
+                            <div class="slds-col">
+                                <lightning-button label="Back" type="submit" onclick={handlePrev}></lightning-button>
+                            </div>
+                            <div class="slds-col">
+                                <lightning-button
+                                    label={labels.finish}
+                                    type="submit"
+                                    variant="brand"
+                                    onclick={handleFinish}
+                                ></lightning-button>
+                            </div>
+                        </footer>
+                    </lightning-record-edit-form>
+                </template>
+                <template if:true={isStepThree}>
+                    <div class="slds-card__body slds-card__body_inner">
+                        <c-form-progress current-step={currentStep}></c-form-progress>
+                        <div class="slds-var-m-around_large">
+                            <c-form-section title={labels.eventAttendanceSummary}></c-form-section>
+                            <div class="slds-var-m-around_medium">
+                                <lightning-record-view-form record-id={event.Id} object-api-name="Event__c">
+                                    <div class="slds-grid slds-gutters slds-wrap slds-grid_align-center">
+                                        <div class="slds-col slds-medium-size_1-of-1 slds-large-size_1-of-3">
+                                            <lightning-output-field field-name="EventName__c"></lightning-output-field>
+                                        </div>
+                                        <div class="slds-col slds-medium-size_1-of-1 slds-large-size_1-of-3">
+                                            <lightning-output-field field-name="StartDate__c"></lightning-output-field>
+                                        </div>
+                                        <div class="slds-col slds-medium-size_1-of-1 slds-large-size_1-of-3">
+                                            <lightning-output-field field-name="Place__c"></lightning-output-field>
+                                        </div>
+                                        <div class="slds-col slds-size_1-of-1">
+                                            <lightning-output-field field-name="Description__c">
+                                            </lightning-output-field>
+                                        </div>
+                                    </div>
+                                </lightning-record-view-form>
+                                <c-attendee-summary attendees={attendees}></c-attendee-summary>
+                            </div>
+                        </div>
+                    </div>
+                    <footer class="slds-card__footer slds-grid slds-gutters slds-grid_align-center">
+                        <div class="slds-col">
+                            <lightning-button
+                                variant="brand"
+                                label={labels.viewEvent}
+                                onclick={handleEventView}
+                                value={event.Id}
+                            ></lightning-button>
+                        </div>
+                    </footer>
+                </template>
+            </article>
+        </div>
+    </div>
+</template>

@@ -1,0 +1,21 @@
+<template>
+    <template for:each={attendees} for:item="attendee">
+        <div key={attendee.Email__c} class="slds-form-element_stacked">
+            <article class="slds-card slds-card_boundary">
+                <div class="slds-card__body slds-grid slds-grid_vertical">
+                    <div class="slds-col">
+                        <lightning-formatted-text value={attendee.FirstName__c}> </lightning-formatted-text>
+                        &nbsp;
+                        <lightning-formatted-text value={attendee.LastName__c}> </lightning-formatted-text>
+                    </div>
+                    <div class="slds-col">
+                        <lightning-formatted-date-time value={attendee.DateOfBirth__c}> </lightning-formatted-date-time>
+                    </div>
+                    <div class="slds-col">
+                        <lightning-formatted-email value={attendee.Email__c}> </lightning-formatted-email>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </template>
+</template>

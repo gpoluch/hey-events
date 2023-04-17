@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>Add</fullName>
+        <categories>wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Add</shortDescription>
+        <value>Add</value>
+    </labels>
+    <labels>
+        <fullName>AttendeeCannotBeUnder18YearsOld</fullName>
+        <categories>wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Attendee Cannot Be Under 18 Years Old.</shortDescription>
+        <value>Attendee cannot be under 18 years old</value>
+    </labels>
+    <labels>
+        <fullName>AttendeeWithEmailAlreadyExists</fullName>
+        <categories>wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Attendee With Email Already Exists</shortDescription>
+        <value>Attendee with email {0} already exists</value>
+    </labels>
+    <labels>
+        <fullName>AttendeesInformation</fullName>
+        <categories>wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Attendees Information</shortDescription>
+        <value>Attendees Information</value>
+    </labels>
+    <labels>
+        <fullName>Back</fullName>
+        <categories>wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Back</shortDescription>
+        <value>Back</value>
+    </labels>
+    <labels>
+        <fullName>CheckCreatedEvent</fullName>
+        <categories>wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Check Created Event</shortDescription>
+        <value>Check created event</value>
+    </labels>
+    <labels>
+        <fullName>ErrorUponEventAttendanceCreation</fullName>
+        <categories>wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Error Upon Event Attendance Creation</shortDescription>
+        <value>Error upon event attendance creation</value>
+    </labels>
+    <labels>
+        <fullName>ErrorWhileAddingEventAttendee</fullName>
+        <categories>wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Error While Adding Event Attendee</shortDescription>
+        <value>Error while adding event attendee</value>
+    </labels>
+    <labels>
+        <fullName>EventAttendanceSummary</fullName>
+        <categories>wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Event Attendance Summary</shortDescription>
+        <value>Event Attendance Summary</value>
+    </labels>
+    <labels>
+        <fullName>EventAttendanceWizard</fullName>
+        <categories>wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Event Attendance Wizard</shortDescription>
+        <value>Event Attendance Wizard (heyCloud)</value>
+    </labels>
+    <labels>
+        <fullName>EventCreatedSuccessfully</fullName>
+        <categories>wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Event Created Successfully</shortDescription>
+        <value>Event created successfully</value>
+    </labels>
+    <labels>
+        <fullName>EventDateAndTime</fullName>
+        <categories>wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Event Date And Time</shortDescription>
+        <value>Event Date and Time</value>
+    </labels>
+    <labels>
+        <fullName>EventInformation</fullName>
+        <categories>wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Event Information</shortDescription>
+        <value>Event Information</value>
+    </labels>
+    <labels>
+        <fullName>FinalStep</fullName>
+        <categories>wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Final Step</shortDescription>
+        <value>Final Step</value>
+    </labels>
+    <labels>
+        <fullName>Finish</fullName>
+        <categories>wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Finish</shortDescription>
+        <value>Finish</value>
+    </labels>
+    <labels>
+        <fullName>FirstStep</fullName>
+        <categories>wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>First Step</shortDescription>
+        <value>First Step</value>
+    </labels>
+    <labels>
+        <fullName>Next</fullName>
+        <categories>wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Next</shortDescription>
+        <value>Next</value>
+    </labels>
+    <labels>
+        <fullName>SecondStep</fullName>
+        <categories>wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Second Step</shortDescription>
+        <value>Second Step</value>
+    </labels>
+    <labels>
+        <fullName>ViewEvent</fullName>
+        <categories>wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>View Event</shortDescription>
+        <value>View Event</value>
+    </labels>
+</CustomLabels>

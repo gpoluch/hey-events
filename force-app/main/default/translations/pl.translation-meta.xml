@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Translations xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customLabels>
+        <label>Dodaj</label>
+        <name>Add</name>
+    </customLabels>
+    <customLabels>
+        <label>Uczestnik musi być dorosły</label>
+        <name>AttendeeCannotBeUnder18YearsOld</name>
+    </customLabels>
+    <customLabels>
+        <label>Uczestnik o adresie email {0} już istnieje</label>
+        <name>AttendeeWithEmailAlreadyExists</name>
+    </customLabels>
+    <customLabels>
+        <label>Informacje o uczestnikach</label>
+        <name>AttendeesInformation</name>
+    </customLabels>
+    <customLabels>
+        <label>Wstecz</label>
+        <name>Back</name>
+    </customLabels>
+    <customLabels>
+        <label>Sprawdź utworzone wydarzenie</label>
+        <name>CheckCreatedEvent</name>
+    </customLabels>
+    <customLabels>
+        <label>Błąd podczas tworzenia uczestnictwa w wydarzeniu</label>
+        <name>ErrorUponEventAttendanceCreation</name>
+    </customLabels>
+    <customLabels>
+        <label>Błąd podczas dodawania uczestnika do wydarzenia</label>
+        <name>ErrorWhileAddingEventAttendee</name>
+    </customLabels>
+    <customLabels>
+        <label>Podsumowanie obecności na wydarzeniu</label>
+        <name>EventAttendanceSummary</name>
+    </customLabels>
+    <customLabels>
+        <label>Kreator obecności na wydarzeniu</label>
+        <name>EventAttendanceWizard</name>
+    </customLabels>
+    <customLabels>
+        <label>Wydarzenie utworzone pomyślnie</label>
+        <name>EventCreatedSuccessfully</name>
+    </customLabels>
+    <customLabels>
+        <label>Data i czas wydarzenia</label>
+        <name>EventDateAndTime</name>
+    </customLabels>
+    <customLabels>
+        <label>Informacje o wydarzeniu</label>
+        <name>EventInformation</name>
+    </customLabels>
+    <customLabels>
+        <label>Ostatni krok</label>
+        <name>FinalStep</name>
+    </customLabels>
+    <customLabels>
+        <label>Zakończ</label>
+        <name>Finish</name>
+    </customLabels>
+    <customLabels>
+        <label>Pierwszy krok</label>
+        <name>FirstStep</name>
+    </customLabels>
+    <customLabels>
+        <label>Dalej</label>
+        <name>Next</name>
+    </customLabels>
+    <customLabels>
+        <label>Drugi krok</label>
+        <name>SecondStep</name>
+    </customLabels>
+    <customLabels>
+        <label>Wyświetl wydarzenie</label>
+        <name>ViewEvent</name>
+    </customLabels>
+    <customTabs>
+        <label>Kreator wydarzeń (heyCloud)</label>
+        <name>EventAttendanceWizard</name>
+    </customTabs>
+</Translations>

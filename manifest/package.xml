@@ -1,36 +1,103 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
-        <members>*</members>
+        <members>EventAttendanceFormController</members>
+        <members>EventAttendanceFormControllerTest</members>
+        <members>TestUtils</members>
         <name>ApexClass</name>
     </types>
     <types>
-        <members>*</members>
-        <name>ApexComponent</name>
+        <members>Attendee__c.DateOfBirth__c</members>
+        <members>Attendee__c.Email__c</members>
+        <members>Attendee__c.FirstName__c</members>
+        <members>Attendee__c.LastName__c</members>
+        <members>EventAttendance__c.Attendee__c</members>
+        <members>EventAttendance__c.Event__c</members>
+        <members>Event__c.Description__c</members>
+        <members>Event__c.EventName__c</members>
+        <members>Event__c.Place__c</members>
+        <members>Event__c.StartDate__c</members>
+        <name>CustomField</name>
     </types>
     <types>
-        <members>*</members>
-        <name>ApexPage</name>
+        <members>Add</members>
+        <members>AttendeeCannotBeUnder18YearsOld</members>
+        <members>AttendeeWithEmailAlreadyExists</members>
+        <members>AttendeesInformation</members>
+        <members>Back</members>
+        <members>CheckCreatedEvent</members>
+        <members>ErrorUponEventAttendanceCreation</members>
+        <members>ErrorWhileAddingEventAttendee</members>
+        <members>EventAttendanceSummary</members>
+        <members>EventAttendanceWizard</members>
+        <members>EventCreatedSuccessfully</members>
+        <members>EventDateAndTime</members>
+        <members>EventInformation</members>
+        <members>FinalStep</members>
+        <members>Finish</members>
+        <members>FirstStep</members>
+        <members>Next</members>
+        <members>SecondStep</members>
+        <members>ViewEvent</members>
+        <name>CustomLabel</name>
     </types>
     <types>
-        <members>*</members>
-        <name>ApexTestSuite</name>
+        <members>CustomLabels</members>
+        <name>CustomLabels</name>
     </types>
     <types>
-        <members>*</members>
-        <name>ApexTrigger</name>
+        <members>Attendee__c</members>
+        <members>EventAttendance__c</members>
+        <members>Event__c</members>
+        <name>CustomObject</name>
     </types>
     <types>
-        <members>*</members>
-        <name>AuraDefinitionBundle</name>
+        <members>Attendee__c-pl</members>
+        <members>EventAttendance__c-pl</members>
+        <members>Event__c-pl</members>
+        <name>CustomObjectTranslation</name>
     </types>
     <types>
-        <members>*</members>
+        <members>Attendee__c</members>
+        <members>EventAttendanceWizard</members>
+        <members>EventAttendance__c</members>
+        <members>Event__c</members>
+        <name>CustomTab</name>
+    </types>
+    <types>
+        <members>Attendee__c-Attendee Layout</members>
+        <members>EventAttendance__c-Event Attendance Layout</members>
+        <members>Event__c-Online Event Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>attendeeSummary</members>
+        <members>eventAttendanceForm</members>
+        <members>formProgress</members>
+        <members>formSection</members>
         <name>LightningComponentBundle</name>
     </types>
     <types>
-        <members>*</members>
-        <name>StaticResource</name>
+        <members>Attendee__c.All</members>
+        <members>EventAttendance__c.All</members>
+        <members>Event__c.All</members>
+        <name>ListView</name>
+    </types>
+    <types>
+        <members>Skip_Verification</members>
+        <name>PermissionSet</name>
+    </types>
+    <types>
+        <members>Admin</members>
+        <name>Profile</name>
+    </types>
+    <types>
+        <members>pl</members>
+        <name>Translations</name>
+    </types>
+    <types>
+        <members>Attendee__c.Attendee_should_be_over_eighteen</members>
+        <name>ValidationRule</name>
     </types>
     <version>56.0</version>
 </Package>
